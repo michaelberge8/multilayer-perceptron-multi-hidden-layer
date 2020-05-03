@@ -99,7 +99,7 @@ def display_time(start_time):
     print("\nTime Elapsed: ", end="")
     if time_elapsed > 60:
         print("{:02d}".format(math.floor(time_elapsed / 60)), end="")
-        print(":{:02d}".format(round(time_elapsed % 60)), end="\n\n")
+        print(":{:02}".format(round(time_elapsed % 60)), end="\n\n")
     else:
         print("00:{:02d}".format(round(time_elapsed % 60)), end="\n\n")
 
